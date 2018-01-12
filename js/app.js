@@ -15,8 +15,8 @@ inputText.bind("contextmenu", () => {
 
 function validateInput() {
   var code = event.keyCode;
-
-  if (event.ctrlKey && code == 86) {
+  console.log(code);
+  if ((event.ctrlKey && code == 86) || (event.metaKey && code == 86)) {
     alert("Sin copy paste, gracias.");
     return false;
   }
