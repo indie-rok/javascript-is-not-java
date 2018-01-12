@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel='stylesheet' href='css/main.css'/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'/>
+  <link rel='stylesheet' href='css/jssocials.css'/>
+  <link rel="stylesheet" type="text/css" href="css/jssocials-theme-flat.css" />
+
   <title>Javascript no es Java</title>
 </head>
 <body>
@@ -14,13 +18,13 @@
     <section class='container'>
       <div class='row'>
         <div class='col text-center'>
-          <h1 class="margin-top-7">Javascript no es java</h1>
+          <h1 class="margin-top-7">Javascript no es java - Escribelo y aprieta enter</h1>
         </div>
       </div>
 
       <div class='row'>
         <div class='col text-center'>
-          <h3 class="margin-top-5">Escribelo y aprieta enter</h3>
+          <h3 class="margin-top-5"></h3>
         </div>
       </div>
 
@@ -30,22 +34,43 @@
 
       <div class='row' id="feedback-container">
         <div class='col text-center'>
-          <h3 id="feedback-good"><span class="success-color">Bien! </span>Anotalo <span id="writes-counter">10</span> veces mas</h3>
+          <h3 id="feedback-good"><span class="success-color">Bien! </span>Anotalo <span id="writes-counter">10</span> veces mas y descubre que pasa</h3>
           <h3 id='feedback-bad'><span class="wrong-color">No</span> lo escribiste bien, una vez mas porfa</h3>
         </div>
       </div>
 
-      <div class='row'>
+      <!-- <div class='row'>
         <div class='col text-center margin-top-5'>
           <h3><span id='people-counter'>123</span> personas en el mundo lo entendieron</h3>
         </div>
-      </div>
+      </div> -->
     </section>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <section id='win-section' class="container">
+    <div class='row'>
+      <div class='col margin-top-7'>
+        <h1><span class="success-color">Felicidades!</span>  Ahora eres un ninja.</h1>
+        <h2 class="margin-top-7">Presumele a tus amigos</h2>
+      </div>
+    </div>
+    <div class='row margin-top-7'>
+      <div class='col'>
+         <div id="share"></div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
+  <script src="js/jssocials.min.js"></script>
+  <script>
+  $("#share").jsSocials({
+  shares: ["facebook", "twitter"]
+});
+</script>
+</script>
 </body>
 </html>
