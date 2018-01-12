@@ -72,6 +72,12 @@ body {
   outline: none;
 }
 
+#mobile-browser-screen {
+  color: black;
+  display: none;
+  height: 100%;
+}
+
 hr {
   border: 1px solid white;
 }

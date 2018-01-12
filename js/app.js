@@ -1,3 +1,8 @@
+if (jQuery.browser.mobile) {
+  $("#general-container").hide();
+  $("#mobile-browser-screen").show();
+}
+
 $("#modalWin").modal({ show: true });
 var inputText = $("#input-repeat");
 var writesCounter = $("#writes-counter");
